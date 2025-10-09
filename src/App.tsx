@@ -49,7 +49,7 @@ function HeaderNav({ page }: { page: Page }) {
                 className="flex items-center gap-2"
               >
                 <img
-                  src="/logo_v2.svg"
+                  src="/logo.svg"
                   alt="StarApps Studio Logo"
                   className="h-8 w-8"
                 />
