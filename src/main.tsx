@@ -3,8 +3,9 @@ import { createRoot } from "react-dom/client";
 import App from "./App";
 import "./index.css";
 
-createRoot(document.getElementById("root")!).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+const rootEl = document.getElementById("root")!;
+const page =
+  (rootEl.getAttribute("data-page") as "home" | "calculator" | "urlgen") ||
+  "calculator";
+
+createRoot(rootEl).render(<App page={page} />);

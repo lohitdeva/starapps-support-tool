@@ -5,64 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Basic SEO tags -->
-    <meta
-      name="description"
-      content="Quickly generate StarApps app pricing, with discounts and updated FX rates applied, along with a paste-ready message for Intercom chats."
-    />
+    <meta name="description" content="%VITE_DESC_LANDING%" />
     <meta name="theme-color" content="#f9fafb" />
-    <link
-      rel="canonical"
-      href="https://starapps-pricing-calculator.vercel.app/"
-    />
+    <link rel="canonical" href="%VITE_SITE_URL%" />
 
     <!-- Open Graph metadata -->
     <meta property="og:locale" content="en_US" />
-    <meta property="og:title" content="Starapps Pricing Calculator" />
+    <meta property="og:title" content="%VITE_TITLE_LANDING%" />
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="StarApps Pricing Calculator" />
-    <meta
-      property="og:url"
-      content="https://starapps-pricing-calculator.vercel.app/"
-    />
-    <meta
-      property="og:description"
-      content="Quickly generate StarApps app pricing, with discounts and updated FX rates applied, along with a paste-ready message for Intercom chats."
-    />
-    <meta
-      property="og:image"
-      content="https://starapps-pricing-calculator.vercel.app/social-card.png"
-    />
+    <meta property="og:site_name" content="%VITE_TITLE_LANDING%" />
+    <meta property="og:url" content="%VITE_SITE_URL%" />
+    <meta property="og:description" content="%VITE_DESC_LANDING%" />
+    <meta property="og:image" content="%VITE_OG_IMAGE_LANDING%" />
     <meta property="og:image:height" content="630" />
     <meta property="og:image:width" content="1200" />
     <meta
       property="og:image:alt"
-      content="Social Card for StarApps Pricing Calculator App"
+      content="StarApps Logo with text: %VITE_TITLE_LANDING% - Simplify repetitive support tasks in just a few simple clicks"
     />
 
     <!-- X (Twitter) Card -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="StarApps Pricing Calculator" />
-    <meta
-      name="twitter:description"
-      content="Quickly generate StarApps app pricing, with discounts and updated FX rates applied, along with a paste-ready message for Intercom chats."
-    />
-    <meta
-      name="twitter:image"
-      content="https://starapps-pricing-calculator.vercel.app/social-card.png"
-    />
+    <meta name="twitter:title" content="%VITE_TITLE_LANDING%" />
+    <meta name="twitter:description" content="%VITE_DESC_LANDING%" />
+    <meta name="twitter:image" content="%VITE_OG_IMAGE_LANDING%" />
+    <meta name="twitter:image:height" content="630" />
+    <meta name="twitter:image:width" content="1200" />
     <meta
       name="twitter:image:alt"
-      content="Social Card for StarApps Pricing Calculator App"
+      content="StarApps Logo with text: %VITE_TITLE_LANDING% - Simplify repetitive support tasks in just a few simple clicks"
     />
-    <meta name="twitter:creator" content="@DevaLohit" />
+    <meta name="twitter:creator" content="%VITE_TWITTER_HANDLE%" />
 
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="icon" type="image/png" href="/favicon-32.png" sizes="32x32" />
     <link rel="icon" href="/favicon.ico" sizes="any" />
-    <title>StarApps Pricing Calculator</title>
+    <title>%VITE_TITLE_LANDING%</title>
   </head>
   <body class="bg-gray-50">
-    <div id="root"></div>
+    <div id="root" data-page="home"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

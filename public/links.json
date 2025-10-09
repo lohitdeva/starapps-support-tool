@@ -1,0 +1,89 @@
+{
+  "apps": {
+    "admin": {
+      "product-edit": "/products/{product_id}",
+      "variant-edit": "/products/{product_id}/variants/{variant_id}",
+      "markets": "/markets",
+      "themes": "/themes",
+      "preferences": "/online_store/preferences",
+      "theme-specific-links": {
+        "theme-code": "/themes/{theme_id}",
+        "theme-editor": "/themes/{theme_id}/editor",
+
+        "theme-editor-app-embeds": "/themes/{theme_id}/editor?context=apps",
+        "theme-editor-product-edit": "/themes/{theme_id}/editor?previewPath=%2Fproducts%2F{product_handle}"
+      },
+      "settings": "/settings",
+      "shopify_tier": "/settings/plan",
+      "billing": "/settings/billing",
+      "accounts": "/settings/organization-account",
+      "apps": "/settings/apps"
+    },
+    "vsk": {
+      "home": "/apps/variant-image-swatch",
+      "swatch-settings": {
+        "product-page-settings": "/apps/variant-image-swatch/product-page-settings",
+        "collection-page-settings": "/apps/variant-image-swatch/collection-page-settings"
+      },
+      "group-settings": {
+        "product-groups": "/apps/variant-image-swatch/product-groups",
+        "product-group-search": "/apps/variant-image-swatch/product-groups?offset=0&global={product_handle}&sort_by=group_asc",
+        "product-group-edit": "/apps/variant-image-swatch/product-groups/{group_id}/edit"
+      },
+      "customize-styles": {
+        "customize-styles-products": "/apps/variant-image-swatch/customize-styles/products",
+        "customize-styles-collections": "/apps/variant-image-swatch/customize-styles/collections",
+        "customize-styles-products-edit": "/apps/variant-image-swatch/customize-styles/products/{preset_id}/edit",
+        "customize-styles-collections-edit": "/apps/variant-image-swatch/customize-styles/collections/{preset_id}/edit"
+      },
+      "app-settings": "/apps/variant-image-swatch/app-settings",
+      "manage-app-embeds": "/apps/variant-image-swatch/app-settings/theme-console",
+      "low-stock-alert": "/apps/variant-image-swatch/low-stock-alert",
+      "localization": "/apps/variant-image-swatch/localization",
+      "pricing": "/apps/variant-image-swatch/pricing"
+    },
+    "vkcl": {
+      "home": "/apps/combined-listings-product-groups-sa-variants-starapps",
+      "product-split": "/apps/combined-listings-product-groups-sa-variants-starapps/split",
+      "group-settings": {
+        "product-groups": "/apps/combined-listings-product-groups-sa-variants-starapps/product-groups",
+        "product-group-search": "/apps/combined-listings-product-groups-sa-variants-starapps/product-groups?offset=0&global={product_handle}&sort_by=group_asc",
+        "product-group-edit": "/apps/combined-listings-product-groups-sa-variants-starapps/product-groups/{group_id}/edit"
+      },
+      "customize-styles": {
+        "customize-styles-products": "/apps/combined-listings-product-groups-sa-variants-starapps/customize-styles/products",
+        "customize-styles-collections": "/apps/combined-listings-product-groups-sa-variants-starapps/customize-styles/collections",
+        "customize-styles-products-edit": "/apps/combined-listings-product-groups-sa-variants-starapps/customize-styles/products/{preset_id}/edit",
+        "customize-styles-collections-edit": "/apps/combined-listings-product-groups-sa-variants-starapps/customize-styles/collections/{preset_id}/edit"
+      },
+      "app-settings": "/apps/combined-listings-product-groups-sa-variants-starapps/app-settings",
+      "manage-app-embeds": "/apps/combined-listings-product-groups-sa-variants-starapps/app-settings/theme-console",
+      "low-stock-alert": "/apps/combined-listings-product-groups-sa-variants-starapps/low-stock-alert",
+      "localization": "/apps/combined-listings-product-groups-sa-variants-starapps/localization",
+      "pricing": "/apps/combined-listings-product-groups-sa-variants-starapps/pricing"
+    },
+    "via": {
+      "home": "/apps/variant-image-automator",
+      "manage-app-embeds": "/apps/variant-image-automator/theme-console",
+      "setup-videos": "/apps/variant-image-automator/setup-videos",
+      "app-settings": "/apps/variant-image-automator/app-settings",
+      "pricing": "/apps/variant-image-automator/pricing"
+    },
+    "ata": {
+      "home": "/apps/alt-text-automator-by-starapps",
+      "app-settings": "/apps/alt-text-automator-by-starapps/app-settings"
+    },
+    "vtk": {
+      "home": "/apps/variant-title-king-app",
+      "manage-app-embeds": "/apps/variant-title-king-app/theme-console",
+      "app-settings": "/apps/variant-title-king-app/app-settings"
+    },
+    "vdk": {
+      "home": "/apps/variant-description-automator-by-starapps",
+      "setup-videos": "/apps/variant-description-automator-by-starapps/setup-videos",
+      "app-settings": "/apps/variant-description-automator-by-starapps/app-settings",
+      "pricing": "/apps/variant-description-automator-by-starapps/pricing"
+    },
+    "uk": { "home": "/apps/urgency-king-low-stock-alert" }
+  }
+}

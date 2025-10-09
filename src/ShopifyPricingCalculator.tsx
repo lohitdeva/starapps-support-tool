@@ -341,7 +341,7 @@ Please let me know if you would like me to go ahead and apply this discount for 
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 py-10 px-4 flex justify-center">
+    <div className="min-h-screen bg-gray-50 px-4 flex justify-center">
       <div className="w-full max-w-5xl grid grid-cols-1 lg:grid-cols-5 gap-6">
         {/* Inputs */}
         <div className="lg:col-span-2 space-y-6">
