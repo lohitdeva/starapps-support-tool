@@ -5,7 +5,10 @@ import "./index.css";
 
 const rootEl = document.getElementById("root")!;
 const page =
-  (rootEl.getAttribute("data-page") as "home" | "calculator" | "urlgen") ||
-  "calculator";
+  (rootEl.getAttribute("data-page") as
+    | "home"
+    | "calculator"
+    | "urlgen"
+    | "groups") || "calculator";
 
 createRoot(rootEl).render(<App page={page} />);

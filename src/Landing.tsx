@@ -153,7 +153,7 @@ export default function Landing() {
   }).format(date);
 
   return (
-    <div className="max-w-3xl mx-auto text-center">
+    <div className="max-w-5xl mx-auto text-center">
       <h1 className="text-3xl md:text-4xl font-semibold mb-2">{greeting}</h1>
       <p className="text-gray-600 mb-8">
         Exact IST: <span className="font-medium">{prettyIST} IST</span>
@@ -164,7 +164,7 @@ export default function Landing() {
           }${geo?.timezone ? ` · ${geo.timezone}` : ""}`}
       </p>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <a
           href="/calculator/"
           className="block rounded-2xl border border-gray-300 bg-white hover:bg-gray-50 p-6 shadow text-left"
@@ -184,6 +184,20 @@ export default function Landing() {
           <p className="text-gray-600 text-sm">
             Generate specific Shopify links to redirect merchants to the desired
             page inside the Shopify admin.
+          </p>
+        </a>
+
+        <a
+          href="/groups/"
+          className="block rounded-2xl border border-gray-300 bg-white hover:bg-gray-50 p-6 shadow text-left"
+        >
+          <div className="text-xl font-semibold mb-1">
+            Product Groups Generator
+          </div>
+          <p className="text-gray-600 text-sm">
+            Generate Product Group setups to mimic multi-option matrices,
+            allowing merchants to circumvent Shopify's option limitations.{" "}
+            <em>(Work in Progress)</em>
           </p>
         </a>
       </div>

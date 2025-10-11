@@ -1,19 +1,21 @@
 import ShopifyPricingCalculator from "./ShopifyPricingCalculator";
 import Landing from "./Landing";
 import UrlGenerator from "./UrlGenerator";
+import ProductGroupsGenerator from "./ProductGroupsGenerator";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/react";
 
-type Page = "home" | "calculator" | "urlgen";
+type Page = "home" | "calculator" | "urlgen" | "groups";
 
 export default function App({ page }: { page: Page }) {
   return (
     <main className="min-h-screen bg-gray-50">
       <HeaderNav page={page} />
-      <div className="max-w-6xl mx-auto px-4 py-8">
+      <div className="max-w-7xl mx-auto px-4 py-8">
         {page === "home" && <Landing />}
         {page === "calculator" && <ShopifyPricingCalculator />}
         {page === "urlgen" && <UrlGenerator />}
+        {page === "groups" && <ProductGroupsGenerator />}
       </div>
       <Analytics />
       <SpeedInsights />
@@ -70,6 +72,7 @@ function HeaderNav({ page }: { page: Page }) {
                 page === "calculator"
               )}
               {link("/urlgen/", "URL Generator", page === "urlgen")}
+              {link("/groups/", "Product Groups Generator", page === "groups")}
             </nav>
           )}
         </div>

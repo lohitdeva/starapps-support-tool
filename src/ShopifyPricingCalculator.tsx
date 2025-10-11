@@ -341,8 +341,21 @@ Please let me know if you would like me to go ahead and apply this discount for 
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 px-4 flex justify-center">
-      <div className="w-full max-w-5xl grid grid-cols-1 lg:grid-cols-5 gap-6">
+    <div className="max-w-6xl mx-auto space-y-8">
+      <div className="flex items-end justify-between">
+        <div>
+          <h1 className="text-2xl font-bold text-gray-900">
+            Pricing Calculator
+          </h1>
+          <hr style={{ margin: "1em 0" }} />
+          <p className="text-gray-600 text-sm">
+            Generate tier-based app pricing in USD and other currencies. Also
+            generate discounts for different apps with either global or per-app
+            discounting.
+          </p>
+        </div>
+      </div>
+      <div className="w-full max-w-6xl grid grid-cols-1 lg:grid-cols-5 gap-6">
         {/* Inputs */}
         <div className="lg:col-span-2 space-y-6">
           <div className="bg-white rounded-2xl shadow p-5">

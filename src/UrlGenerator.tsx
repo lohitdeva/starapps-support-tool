@@ -333,7 +333,17 @@ export default function UrlGenerator() {
   /** ---------- Render ---------- */
 
   return (
-    <div className="max-w-4xl mx-auto">
+    <div className="max-w-6xl mx-auto space-y-8">
+      <div className="flex items-end justify-between">
+        <div>
+          <h1 className="text-2xl font-bold text-gray-900">URL Generator</h1>
+          <hr style={{ margin: "1em 0" }} />
+          <p className="text-gray-600 text-sm">
+            Generate store-specific Shopify links to share with merchants for
+            easy deep-navigation within the Shopify admin.
+          </p>
+        </div>
+      </div>
       <Card>
         {/* Top controls */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
